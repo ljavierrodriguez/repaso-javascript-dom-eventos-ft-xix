@@ -25,14 +25,57 @@ Bonus:
 */
 
 // Respuesta 1.
-
+let logo = document.querySelector('.navbar-brand');
+logo.innerHTML = "Luis J. Rodriguez O."
 // Respuesta 2.
+
+// capturar el menu
+let navbarNav = document.querySelector('.navbar-nav');
+
+// Crear los elementos de la opcion del menu Login
+let loginNavItem = document.createElement('li');
+let loginNavLink = document.createElement('a');
+loginNavLink.href = '#!';
+loginNavLink.innerText = "Login";
+loginNavLink.classList.add('nav-link');
+loginNavItem.appendChild(loginNavLink);
+loginNavItem.classList.add('nav-item');
+navbarNav.appendChild(loginNavItem);
+
+// Crear los elementos de la opcion del menu Register
+let registerNavItem = document.createElement('li');
+let registerNavLink = document.createElement('a');
+registerNavLink.href = '#!';
+registerNavLink.innerText = "Register";
+registerNavLink.classList.add('nav-link');
+registerNavItem.appendChild(registerNavLink);
+registerNavItem.classList.add('nav-item');
+navbarNav.appendChild(registerNavItem);
 
 // Respuesta 3.
 
+let img = document.querySelector('img');
+img.src = "https://picsum.photos/id/237/900/400"
+
 // Respuesta 4.
 
+let callActionContent = document.querySelector('.card-body');
+let chidren = document.querySelector('.card > .card-body > .text-white');
+let p = document.createElement('p');
+p.classList.add('text-white', 'm-0');
+p.innerHTML = "Hello World";
+callActionContent.insertBefore(p, chidren)
+
 // Respuesta 5.
+
+let cards = document.querySelectorAll('.card.h-100');
+
+let i = 1;
+for(let card of cards){
+    let title = card.querySelector('.card-title');
+    title.innerHTML = "Content " + (i)
+    i++;
+}
 
 // Respuesta 6.
 
