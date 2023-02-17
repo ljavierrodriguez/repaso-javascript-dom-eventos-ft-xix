@@ -60,7 +60,7 @@ img.src = "https://picsum.photos/id/237/900/400"
 // Respuesta 4.
 
 let callActionContent = document.querySelector('.card-body');
-let chidren = document.querySelector('.card > .card-body > .text-white');
+let chidren = document.querySelector('.text-white.m-0');
 let p = document.createElement('p');
 p.classList.add('text-white', 'm-0');
 p.innerHTML = "Hello World";
